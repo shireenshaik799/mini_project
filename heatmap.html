@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Density Heatmap</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Heatmap Plugin -->
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+
+    <style>
+        body { margin: 0; }
+        #map { height: 100vh; }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<!-- Load your datasets -->
+<script src="locations.js"></script>
+<script src="density.js"></script>
+
+<script>
+
+// Create map centered on India
+var map = L.map('map').setView([22.5937, 78.9629], 5);
+
+// Add map tiles
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+}).addTo(map);
+
+// Convert object format → heatmap array
+var heatData = [];
+
+Object.keys(density).forEach(function(district) {
+    if (locations[district]) {
+        var lat = locations[district][0];
+        var lng = locations[district][1];
+        var intensity = density[district];
+
+        heatData.push([lat, lng, intensity]);
+    }
+});
+
+L.heatLayer(heatData, {
+    radius: 30,
+    blur: 25,
+    maxZoom: 10,
+    gradient: {
+        0.4: '#8b0000',
+        0.7: '#8b0000',
+        1.0: '#8b0000'
+    }
+}).addTo(map);
+
+</script>
+
+</body>
+</html>

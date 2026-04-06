@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .main-container {
+            font-family: "Roboto";
+        }
+
+       
+
+        .wiki-logo {
+            margin-bottom: 30px;
+            width: 150px;
+            border: opx;
+            border-radius: 10px;
+        }
+
+        .search-input {
+            margin-top: 10px;
+            border: opx;
+            border-radius: 10px;
+            padding: 10px;
+            
+            font-size: 18px;
+            height: 40px;
+        }
+
+        .search-results {
+            width: 100%;
+            padding-left: 20px;
+            color: white;
+        }
+
+        /* Search Result Item */
+.result-item {
+    margin-bottom: 20px;
+    color: white; /* Ensures that the text is white */
+}
+
+/* Search Result Title */
+.result-title {
+    font-size: 22px;
+    color:orange; /* Title in white */
+    text-decoration: none;
+}
+
+/* Search Result URL */
+.result-url {
+    color: #00FF00; /* If you want the link to remain green or use white: change to 'white' */
+    text-decoration: none;
+}
+
+/* Search Result Description */
+.link-description {
+    font-size: 15px;
+    color: white; /* Description in white */
+}
+.wiki{
+   
+    background-color: rgba(0, 0, 0, 0.5);
+        
+        
+        border: 0px;
+        border-radius: 20px;
+
+}
+      .b{
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 0px;
+        border-radius: 20px;
+
+      
+      }
+      .back {
+    background-image: url('Templesimages/largest-hindu-temple-in-the-world.jpeg');
+    background-size: auto; /* Maintains original image size */
+    background-attachment: fixed;
+    background-repeat: repeat; /* Repeats the image horizontally and vertically */
+    background-position: top left; /* Starts repeating from the top-left corner */
+    
+}
+.info{
+        color:white;
+        background:black;
+        border: 2px solid rgb(8, 8, 56);
+        
+        border-radius: 20px;
+      }
+      .info:hover{
+        color:white;
+        background:rgb(9, 9, 9);
+        border: 2px solid rgb(8, 8, 56);
+        
+        border-radius: 20px;
+      }
+      
+      .video{
+        border: 2px solid rgb(40, 9, 4);
+        text-align: center;
+        border-radius: 20px;
+      }
+      .nav{
+        background-color: rgb(10, 9, 9);
+        color: aliceblue;
+      }
+      .li{
+        background-color: rgb(120, 115, 115);
+        color: black;
+        border: 0px;
+        border-radius: 5px;
+        margin: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 40px;
+        text-align: center;
+      }
+      .li:hover{
+        
+        background-color: rgb(80, 77, 73);
+        color: rgb(253, 251, 251);
+        border: 0px;
+        border-radius: 5px;
+        margin: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 40px;
+        text-align: center;
+      
+      }
+      .lit{
+        background-image: url('fortsimages/ICON.jpg');
+        border: 0px;
+        border-radius: 5px;
+      
+        
+        
+        text-align: center;
+      }
+      .BadrinathTemple {
+        background-image: url('Templesimages/Badrinath-Temple-Uttarakhand-1024x710.jpg');
+    border: opx;
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%; 
+    height: 300px; 
+    }
+    .RamanathaswamyTemple{
+      background-image: url('Templesimages/Ramanathaswamy-Temple-Tamil-Nadu.png');
+    border: opx;
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%; 
+    height: 300px; 
+    }
+    .JagannathTemple{
+      background-image: url('Templesimages/Jagannath-Temple-Odisha.png');
+    border: opx;
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%; 
+    height: 300px; 
+    }
+    .DwarkadhishTemple{
+      background-image: url('Templesimages/Dwarkadhish-Temple.png');
+    border: opx;
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%; 
+    height: 300px;  
+    }
+    .BrahmajiTemple{
+      background-image: url('Templesimages/Brahmaji-Temple-Pushkar-Rajasthan.png');
+    border: opx;
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%; 
+    height: 300px;  
+    }
+    .KedarnathTemple{
+      background-image: url('Templesimages/Kedarnath-Temple-Uttarakhand.png');
+    border: opx;
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%; 
+    height: 300px;
+    }
+    .AmarnathTemple{
+      background-image: url('Templesimages/Amarnath-Temple.png');
+    border: opx;
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%; 
+    height: 300px;
+    } 
+    .ISKCONTemple{
+      background-image: url('Templesimages/ISKCON-Temple.png');
+    border: opx;
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%; 
+    height: 300px;
+    }
+    .KashiVishwanathTemple{
+      background-image: url('Templesimages/Kashi-Vishwanath-Temple-Varanasi-Uttar-Pradesh.png');
+    border: opx;
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%; 
+    height: 300px;
+    }
+    .VaishnoDeviTemple{
+      background-image: url('Templesimages/Vaishno-Devi-Temple-Jammu-Kashmir.png');
+    border: opx;
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%; 
+    height: 300px;
+    }
+    .TirumalaVenkateswaraTemple{
+      background-image: url('Templesimages/Thir.jpg');
+    border: opx;
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%; 
+    height: 300px;
+    }
+.Title{
+        color: white;
+        font-size: medium;
+        font-weight: 20px;
+        background-color: rgb(241, 98, 8);
+        border: 0px;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+      }
+      .Ti{
+        color:white;
+        text-align: center;
+      }
+      .Til{
+        color:white;
+        text-align: center;
+      }
+      .Thi{
+        color: white;
+        background-color: rgb(46, 48, 49);
+        border: 0px;
+        border-radius: 20px;
+      }
+      .Thi:hover{
+        color: white;
+        background-color: rgb(30, 32, 34);
+        border: 0px;
+        border-radius: 20px;
+      }
+      .fixed-top {
+        background-color: black;
+         position: fixed;
+         top: 0;
+         right: 0;
+         left: 0;
+         z-index: 1030; /* Keeps the navbar above other content */
+        }
+      body{
+        padding-top: 70px;
+      }
+      .vertical-nav {
+      background-color: #343a40; /* Dark background */
+      height: 90vh; /* Full height */
+      color: white;
+    }
+    .vertical-nav a {
+      color: white;
+    }
+    .vertical-nav a:hover {
+      background-color: #495057; /* Darker shade on hover */
+    }
+    .bg{
+      background-color: black;
+      border: 0px;
+      border-radius: 10px;
+    }
+    .navi{
+      background-color: #495057;
+       color: aliceblue;
+       margin: 10px;
+       border: 0px;
+       border-radius: 10px;
+    }
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container col-12">
+        <div class="row">
+          <div class="col-12 nav">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+              <button class="lit" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span>
+                  <a class="navbar-brand" href="#">
+                    <img src="fortsimages/ICON.jpg" height="50PX" width="50PX">
+                  </a>
+                </span>
+              </button>
+              <div class="collapse navbar-collapse navbar-item-alignment" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link li" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link li" href="Temple.html">Temples</a>
+                    <a class="nav-link li" href="Forts.html">Forts</a>
+                    <a class="nav-link li" href="beaches.html">Beaches</a>
+                    <a class="nav-link li" href="follow.html">Follow Us</a>
+                  
+                    <!-- Search Input -->
+                    <div class="wiki-search-header text-center ml-auto">
+                      <input placeholder="Type a keyword and press Enter to search" type="search" class="search-input w-100" id="searchInput" />
+                    </div>
+                  </div>
+                  
+              </div>
+            </nav>
+          </div>
+         </div>
+  </div></div>
+  
+  
+  
+  
+  <div class="col-12 back ">
+    
+    <div class="container col-12  wiki" id="tirupati">
+        <div class="d-none" id="spinner">
+            <div class="d-flex justify-content-center">
+              <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+            </div>
+          </div>
+          <div class="search-results" id="searchResults"></div>
+        </div>
+    
+    <div class="container col-12  b" id="tirupati">
+       <div class="row">
+      <div class=" col-12 col-lg-3">
+          <h4 class="Title Til"> Tirumala Venkateswara Temple</h4>
+        <p class="col-12  TirumalaVenkateswaraTemple" height="300"   ></p>
+      </div>
+      <div class="col-12 col-lg-3 info">
+        <h4 class="card-title Til"> Tirumala Venkateswara Temple</h4>
+        <p class="card-text ">Tirumala Venkateswara Temple, located in the Tirumala Hills near Tirupati, Andhra Pradesh, is one of the most sacred and wealthiest Hindu temples in the world. Dedicated to Lord Venkateswara, an incarnation of Lord Vishnu, the temple is a key pilgrimage site, attracting millions of devotees every year.
+
+          Known for its stunning Dravidian architecture, the temple is famous for the ritual of devotees offering their hair as an act of devotion. The annual Brahmotsavam festival is a major event celebrated with grandeur. The temple is believed to bring blessings, prosperity, and fulfillment of wishes to those who visit and worship Lord Venkateswara.</p>
+      </div>
+
+      <div class="col-12 col-lg-3 mt-2">
+          
+        <iframe class="video" width="300" height="300" src="https://www.youtube.com/embed/2mjNmD0lT3g?si=BjqgJrGL2ov1VQfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+    </div>
+      
+    <div class="col-12 col-lg-3 mt-2">
+          
+      <iframe class="video" src="https://api.wo-cloud.com/content/widget/?geoObjectKey=2429142&language=en&region=US&timeFormat=HH:mm&windUnit=mph&systemOfMeasurement=imperial&temperatureUnit=fahrenheit" name="CW2" scrolling="no" width="318" height="318" frameborder="0" style="border: 1px solid #10658E;border-radius: 8px"></iframe>
+    <a href="https://www.google.com/maps/dir//Tirupati,+Andhra+Pradesh/@13.6276389,79.3441014,12z/data=!4m18!1m8!3m7!1s0x3a4d4b0f88620427:0xcf4152d1daca0cac!2sTirupati,+Andhra+Pradesh!3b1!8m2!3d13.6287557!4d79.4191795!16zL20vMDg5bHJj!4m8!1m0!1m5!1m1!1s0x3a4d4b0f88620427:0xcf4152d1daca0cac!2m2!1d79.4191795!2d13.6287557!3e3?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+
+        <button class="btn btn-success">Directions</button>
+    </a>
+  </div></div></div>
+
+
+
+  <div class="container col-12  b" id="Rameswaram">
+    <div class="row">
+   <div class=" col-12 col-lg-3">
+       <h4 class="Title Til"> Ramanathaswamy Temple</h4>
+     <p class="col-12  RamanathaswamyTemple" height="300"   ></p>
+   </div>
+   <div class="col-12 col-lg-3 info">
+     <h4 class="card-title Til"> Ramanathaswamy Temple</h4>
+     <p class="card-text ">Ramanathaswamy Temple is a renowned Hindu temple located on Rameswaram Island in Tamil Nadu, India. It is dedicated to Lord Shiva and is one of the 12 Jyotirlinga shrines, making it one of the holiest temples for Shaivites. The temple is famous for its impressive architecture, including the longest corridor of any Hindu temple, stretching over 1,200 meters with beautifully carved pillars.
+
+      According to legend, the temple is closely tied to the Ramayana, as it is believed that Lord Rama worshipped Lord Shiva here to atone for killing Ravana. The temple is also a significant pilgrimage site for those undertaking the Char Dham yatra.</p>
+   </div>
+
+   <div class="col-12 col-lg-3 mt-2">
+       
+    <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/WOqCMnF4haw?si=9rWzhHCOzXI5l2Tp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   
+ </div>
+   
+ <div class="col-12 col-lg-3 mt-2">
+       
+  <iframe class="video" src="https://api.wo-cloud.com/content/widget/?geoObjectKey=9021374&language=en&region=US&timeFormat=HH:mm&windUnit=mph&systemOfMeasurement=imperial&temperatureUnit=fahrenheit" name="CW2" scrolling="no" width="318" height="318" frameborder="0" style="border: 1px solid #10658E;border-radius: 8px"></iframe>
+ <a href="https://www.google.com/maps/dir//Sri+Arulmigu+Ramanathaswamy+Temple,+Rameswaram,+Tamil+Nadu+623526/@9.2881136,79.314817,17z/data=!4m17!1m7!3m6!1s0x3b01e3dc4949ac6d:0x9ffdab70cc4aa4ba!2sSri+Arulmigu+Ramanathaswamy+Temple!8m2!3d9.2881136!4d79.3173919!16s%2Fm%2F026lcs2!4m8!1m0!1m5!1m1!1s0x3b01e3dc4949ac6d:0x9ffdab70cc4aa4ba!2m2!1d79.3173919!2d9.2881136!3e3?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+
+     <button class="btn btn-success">Directions</button>
+ </a>
+</div></div></div>
+  </div>
+
+
+  <script>
+    let searchInputEl = document.getElementById("searchInput");
+    let searchResultsEl = document.getElementById("searchResults");
+    let spinnerEl = document.getElementById("spinner");
+
+    function createAndAppendSearchResult(result) {
+      let { link, title, description } = result;
+
+      let resultItemEl = document.createElement("div");
+      resultItemEl.classList.add("result-item");
+      searchResultsEl.appendChild(resultItemEl);
+
+      // Create Title Element
+      let titleEl = document.createElement("a");
+      titleEl.classList.add("result-title");
+      titleEl.textContent = title;
+      titleEl.href = link;
+      titleEl.target = "_blank";
+      resultItemEl.appendChild(titleEl);
+
+      // Create Break Element
+      let breakEl = document.createElement("br");
+      resultItemEl.appendChild(breakEl);
+
+      // Create URL Element
+      let urlEl = document.createElement("a");
+      urlEl.classList.add("result-url");
+      urlEl.target = "_blank";
+      urlEl.textContent = link;
+      resultItemEl.appendChild(urlEl);
+
+      // Create Another Break Element
+      let lineEl = document.createElement("br");
+      resultItemEl.appendChild(lineEl);
+
+      // Create Description Element
+      let descriptionEl = document.createElement("p");
+      descriptionEl.classList.add("link-description");
+      descriptionEl.textContent = description;
+      resultItemEl.appendChild(descriptionEl);
+    }
+
+    function displayResults(searchResults) {
+      spinnerEl.classList.add("d-none");
+      searchResultsEl.innerHTML = "";
+      for (let result of searchResults) {
+        createAndAppendSearchResult(result);
+      }
+    }
+
+    function searchInput(event) {
+      if (event.key === "Enter") {
+        searchResultsEl.innerHTML = "";    
+        spinnerEl.classList.remove("d-none");
+        let searchInput = searchInputEl.value;
+        let url = "https://apis.ccbp.in/wiki-search?search=" + searchInput;
+        let options = { method: "GET" };
+
+        fetch(url, options)
+          .then(function(response) {
+            return response.json();
+          })
+          .then(function(jsonData) {
+            let { search_results } = jsonData;
+            displayResults(search_results);
+          });
+      }
+    }
+
+    searchInputEl.addEventListener("keydown", searchInput);
+  </script>
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body></html>

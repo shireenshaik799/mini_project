@@ -1,0 +1,790 @@
+<!doctype html>
+<lang="en"></lang>
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      .main-container {
+            font-family: "Roboto";
+        }
+
+       
+
+        .wiki-logo {
+            margin-bottom: 30px;
+            width: 150px;
+            border: opx;
+            border-radius: 10px;
+        }
+
+        .search-input {
+            margin-top: 10px;
+            border: opx;
+            border-radius: 10px;
+            padding: 10px;
+            
+            font-size: 18px;
+            height: 40px;
+        }
+
+        .search-results {
+            width: 100%;
+            padding-left: 20px;
+            color: white;
+        }
+
+        /* Search Result Item */
+.result-item {
+    margin-bottom: 20px;
+    color: white; /* Ensures that the text is white */
+}
+
+/* Search Result Title */
+.result-title {
+    font-size: 22px;
+    color:orange; /* Title in white */
+    text-decoration: none;
+}
+
+/* Search Result URL */
+.result-url {
+    color: #00FF00; /* If you want the link to remain green or use white: change to 'white' */
+    text-decoration: none;
+}
+
+/* Search Result Description */
+.link-description {
+    font-size: 15px;
+    color: white; /* Description in white */
+}
+.wiki{
+   
+    background-color: rgba(0, 0, 0, 0.5);
+        
+        
+        border: 0px;
+        border-radius: 20px;
+}
+      .b{
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        margin: 10px;
+        border: 0px;
+        border-radius: 20px;
+
+      
+      }
+      .back {
+    background-image: url('fortsimages/Red-Fort-Delhi-City-1.jpg');
+    background-size: auto; /* Maintains original image size */
+    background-attachment: fixed;
+    background-repeat: repeat; /* Repeats the image horizontally and vertically */
+    background-position: top left; /* Starts repeating from the top-left corner */
+}
+.back1{
+    background-image: url('fortsimages/Red-Fort-Delhi-City-1.jpg');
+    background-size: auto; /* Maintains original image size */
+    background-attachment: fixed;
+    background-repeat: repeat; /* Repeats the image horizontally and vertically */
+    background-position: top left; /* Starts repeating from the top-left corner */
+    margin: 0px;
+}
+
+
+      .info{
+        color:white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 2px solid rgb(8, 8, 56);
+        
+        border-radius: 20px;
+      }
+      .info:hover{
+        color:white;
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 2px solid rgb(8, 8, 56);
+        
+        border-radius: 20px;
+      }
+      
+      .video{
+        border: 2px solid rgb(40, 9, 4);
+        text-align: center;
+        border-radius: 20px;
+      }
+      .nav{
+        background-color: rgb(10, 9, 9);
+        color: aliceblue;
+      }
+      .lit{
+        background-image: url('fortsimages/ICON.jpg');
+        border: 0px;
+        border-radius: 5px;
+      
+        
+        
+        text-align: center;
+      }
+      .li{
+        background-color: rgb(120, 115, 115);
+        color: black;
+        border: 0px;
+        border-radius: 5px;
+        margin: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 40px;
+      }
+      .li:hover{
+        
+        background-color: rgb(80, 77, 73);
+        color: rgb(253, 251, 251);
+        border: 0px;
+        border-radius: 5px;
+        margin: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 40px;
+      
+      }
+      .pho {
+        background-image: url('fortsimages/Red-Fort-Delhi-City-1.jpg');
+    border: opx;
+    border-radius: 10px;
+    background-size: cover;
+    width: 100%; 
+    height: 300px; 
+}
+    .MehrangarhFort{
+        background-image: url('fortsimages/Mehrangarh-Fort-Jodhpur-Rajasthan.jpg');
+        border: opx;
+        border-radius: 10px;
+        background-size: cover;
+        width: 100%; 
+        height: 300px; 
+
+    }
+    .GwaliorFort{
+        background-image: url('fortsimages/Gwalior-Fort-Madhya-Pradesh.jpg');
+        border: opx;
+        border-radius: 10px;
+        background-size: cover;
+        width: 100%; 
+        height: 300px; 
+
+    }
+    .ChittorFort{
+        background-image: url('fortsimages/Chittorgarh-Fort-Rajasthan.jpg');
+        border: opx;
+        border-radius: 10px;
+        background-size: cover;
+        width: 100%; 
+        height: 300px; 
+
+    }
+    .AgraFort{
+        background-image: url('fortsimages/Red-Fort-in-Agra.jpg');
+        border: opx;
+        border-radius: 10px;
+        background-size: cover;
+        width: 100%; 
+        height: 300px; 
+
+    }
+    .JaisalmerFort{
+        background-image: url('fortsimages/Jaisalmer-Fort1-Rajasthan.jpg');
+        border: opx;
+        border-radius: 10px;
+        background-size: cover;
+        width: 100%; 
+        height: 300px; 
+    }
+    .KangraFort{
+        background-image: url('fortsimages/Kangra-Fort-Himachal-Pradesh.jpg');
+        border: opx;
+        border-radius: 10px;
+        background-size: cover;
+        width: 100%; 
+        height: 300px; 
+
+    }
+    .PanhalaFort{
+        background-image: url('fortsimages/Panhala-Fort-Maharashtra.jpg');
+        border: opx;
+        border-radius: 10px;
+        background-size: cover;
+        width: 100%; 
+        height: 300px; 
+
+    }
+    .JunagarhFort{
+        background-image: url('fortsimages/Junagarh-Fort-Bikaner.jpg');
+        border: opx;
+        border-radius: 10px;
+        background-size: cover;
+        width: 100%; 
+        height: 300px; 
+    }
+      .Title{
+        color: white;
+        font-size: medium;
+        
+        background-color: rgb(241, 98, 8);
+        border: 0px;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+      }
+      .Ti{
+        color:white;
+        text-align: center;
+      }
+      .Til{
+        color:white;
+        text-align: center;
+      }
+      .Thi{
+        color: white;
+        background-color: rgb(46, 48, 49);
+        border: 0px;
+        border-radius: 20px;
+      }
+      .Thi:hover{
+        color: white;
+        background-color: rgb(30, 32, 34);
+        border: 0px;
+        border-radius: 20px;
+      }
+      .fixed-top {
+        background-color: black;
+         position: fixed;
+         top: 0;
+         right: 0;
+         left: 0;
+         z-index: 1030; /* Keeps the navbar above other content */
+        }
+      body{
+        padding-top: 67px;
+      }
+
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head><body>
+  <div class="col-12">
+    <div class="container col-12">
+        <div class="row">
+          <div class="col-12 nav">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+              <button class="lit" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span>
+                  <a class="navbar-brand" href="#">
+                    <img src="fortsimages/ICON.jpg" height="50PX" width="50PX">
+                  </a>
+                </span>
+              </button>
+              <div class="collapse navbar-collapse navbar-item-alignment" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link li" href="index.html">Home<span class="sr-only">(current)</span></a>
+                  <a class="nav-link li" href="Temple.html">Temples</a>
+                  <a class="nav-link li" href="Forts.html">Forts</a>
+                  <a class="nav-link li" href="beaches.html">Beaches</a>
+                  <a class="nav-link li" href="follow.html">Follow Us</a>
+                  <!-- Search Input -->
+                  <div class="wiki-search-header text-center ml-auto">
+                    <input placeholder="Search Place Here" type="search" class="search-input w-100" id="searchInput" />
+                  </div>
+                </div>
+                </div>
+              </div>
+            </nav></div></div></div></div>
+          </div>
+        <div class="col-12 back">
+
+          <div class="container col-12  wiki" id="tirupati">
+            <div class="d-none" id="spinner">
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                </div>
+              </div>
+              <div class="search-results" id="searchResults"></div>
+            </div>
+
+
+
+
+            
+            <div class="container col-12  b">
+               <div class="row">
+              <div class=" col-12 col-lg-3">
+                  <h4 class="Title">Red Fort</h4>
+                <p class="col-12 pho" height="300"   ></p>
+              </div>
+              <div class="col-12 col-lg-3 info">
+                <h4 class="card-title Til">Red Fort</h4>
+                <p class="card-text ">The Red Fort, located in Delhi, India, is a historic fortress built by the Mughal Emperor Shah Jahan in 1648. Made primarily of red sandstone, it served as the main residence of the Mughal emperors for nearly 200 years. The fort is a symbol of India's rich history, showcasing a blend of Persian, Timurid, and Indian architectural styles. It played a pivotal role in India's independence movement and is where the Prime Minister hoists the national flag on Independence Day. Today, it stands as a UNESCO World Heritage site, attracting millions of visitors annually.</p>
+              </div>
+  
+              <div class="col-12 col-lg-3 Thi">
+                  <h4 class=" Ti">Things to do:</h4>
+                  <p class="Thi">
+  
+                      <p><p>1.Admire the stunning architecture</p>
+                      <p>2.Treat your eyes at the sight of the manicured gardens</p>
+                      <p>3.Explore the Khas Mahal, Mumtaz Mahal and Rang Mahal</p>
+                      <p>4.Watch the iconic Light and Sound Show</p>
+                      <p>5.Shop at the local market</p> <p>Visit :October to March</p></p>
+                      
+                      <p>Address : Netaji Subhash Marg, Chandni Chowk, New Delhi, Delhi – 110006</p>
+                      
+                      <p> Timings : 9:30 AM – 4:30 PM, closed on Monday</p>
+                      
+                    <p>  Entry Fee : INR 35 (Indian Nationals), INR 500 (Foreign Nationals)</p>
+                      
+                     <p> Also Read : Top Tourist Attractions in Delhi</p></p>
+                </div>
+  
+              <div class="col-6 col-lg-3  ">
+                  
+                <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/Hw1PHpyM4aw?si=92U5qp-jFVv69C3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <a href="https://www.google.com/maps/dir//Red+Fort,+Netaji+Subhash+Marg,+Lal+Qila,+Chandni+Chowk,+New+Delhi,+Delhi,+110006/@28.621031,77.1906729,13z/data=!4m12!1m2!2m1!1sRed+Fort!4m8!1m0!1m5!1m1!1s0x390cfce26ec085ef:0x441e32f4fa5002fb!2m2!1d77.2410203!2d28.6561592!3e3?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                  <button class="btn btn-success">Directions</button>
+              </a>
+              
+              </div></div></div>
+
+              <div class="container col-12  b">
+                <div class="row">
+               <div class=" col-12 col-lg-3">
+                   <h4 class="Title">Mehrangarh Fort</h4>
+                 <p class="col-12 MehrangarhFort" height="300"   ></p>
+               </div>
+               <div class="col-12 col-lg-3 info">
+                 <h4 class="card-title Til">Mehrangarh Fort</h4>
+                 <p class="card-text ">Mehrangarh Fort, located in Jodhpur, Rajasthan, is one of the largest and most magnificent forts in India. Built in 1459 by Rao Jodha, the founder of Jodhpur, the fort stands atop a 400-foot hill and offers stunning views of the "Blue City" below. Its massive walls, intricate palaces, and expansive courtyards reflect Rajput architecture and craftsmanship. Inside, it houses a museum showcasing royal artifacts, armory, and paintings. Mehrangarh Fort is a symbol of Rajasthan's rich history and is a popular tourist attraction, renowned for its grandeur and cultural significance.</p>
+               </div>
+   
+               <div class="col-12 col-lg-3 Thi">
+                   <h4 class=" Ti">Things to do:</h4>
+                   <p class="Thi">
+   
+                      <p><p>1.Take part in zip lining</p>
+                        <p>2.Admire the glasswork at Sheesh Mahal</p>
+                        <p>3.Marvel at the sight of Phool Mahal</p>
+                        <p>4.Dive into the rich history at the fort museum</p>
+                        <p>5.Seek blessings at Chamunda Mataji Temple
+                            Best Time to</p> <p>Visit :October to March</p></p>
+                       
+                       <p>Address : Sodagaran Mohalla, Jodhpur, Rajasthan – 342006</p>
+                       
+                       <p> Timings : 9:00 AM – 5:00 PM</p>
+                       
+                     <p>  Entry Fee :INR 60 (Indian Nationals), INR 400 (Foreign Nationals)</p>
+                       
+                      <p> Also Read : 20 Most Visited Forts and Palaces in Rajasthan</p></p>
+                 </div>
+   
+               <div class="col-6 col-lg-3  ">
+                   
+                <iframe width="300" height="300" class="video"  src="https://www.youtube.com/embed/Keg7icC56Sg?si=RusRLkZxlUGxOiTW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <a href="https://www.google.com/maps/dir//Mehrangarh+Fort,+Sodagaran+Mohalla,+Jodhpur,+Rajasthan+342001/@26.2978267,73.0092585,16z/data=!4m18!1m8!3m7!1s0x39418db7f5a4e8d5:0x91c3eb1d93338906!2sMehrangarh+Fort!8m2!3d26.2978267!4d73.0180132!15sCg9NZWhyYW5nYXJoIEZvcnRaESIPbWVocmFuZ2FyaCBmb3J0kgETaGlzdG9yaWNhbF9sYW5kbWFya-ABAA!16zL20vMDVjX2xt!4m8!1m0!1m5!1m1!1s0x39418db7f5a4e8d5:0x91c3eb1d93338906!2m2!1d73.0180132!2d26.2978267!3e3?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                   <button class="btn btn-success">Directions</button>
+               </a>
+               
+               </div></div></div>
+
+               <div class="container col-12  b">
+                <div class="row">
+               <div class=" col-12 col-lg-3">
+                   <h4 class="Title">Gwalior Fort</h4>
+                 <p class="col-12 GwaliorFort" height="300"   ></p>
+               </div>
+               <div class="col-12 col-lg-3 info">
+                 <h4 class="card-title Til">Gwalior Fort</h4>
+                 <p class="card-text ">Gwalior Fort, located in Gwalior, Madhya Pradesh, is a historic hilltop fort renowned for its stunning architecture and strategic significance. Dating back to the 6th century, it has been ruled by various dynasties, including the Tomars, Mughals, and Marathas. The fort is famous for its massive sandstone walls, intricate palaces, temples, and water tanks. Notable structures include the Man Singh Palace, known for its blue-tiled facade, and the Teli Ka Mandir, an ancient Hindu temple. Often called "The Gibraltar of India," Gwalior Fort is a symbol of resilience and architectural grandeur.</p>
+               </div>
+   
+               <div class="col-12 col-lg-3 Thi">
+                   <h4 class=" Ti">Things to do:</h4>
+                   <p class="Thi">
+   
+                      <p><p>1.Watch the spectacular Light and Sound Show</p>
+                        <p>2.Marvel at the gorgeous architecture of Man Singh Palace</p>
+                        <p>3.Walk around Gujari Mahal, Karan Palace and Shah Jahan Mahal</p>
+                        <p>4.Worship Lord Shiva and Lord Vishnu at Teli ka Mandir</p>
+                        <p>5.Admire the beauty of Sas Bahu Temple</p> <p>Best Time to Visit :October to March</p></p>
+                       
+                       <p>Address : Gwalior, Madhya Pradesh - 474008</p>
+                       
+                       <p> Timings : 6:00 AM – 5:30 PM</p>
+                       
+                     <p>  Entry Fee :INR 75 (Indian Nationals), INR 250 (Foreign Nationals)</p>
+                       
+                      <p> Also Read :  Top 10 Places to Visit in Madhya Pradesh</p></p>
+                 </div>
+   
+               <div class="col-6 col-lg-3  ">
+                   
+                <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/p-HFXV6dMD8?si=4E12e3wtr_0Q1G4H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <a href="https://www.google.com/maps/dir//Gwalior+Fort,+Gwalior,+Madhya+Pradesh+474008/@26.2229761,78.1559573,15z/data=!4m12!1m2!2m1!1sGwalior+Fort!4m8!1m0!1m5!1m1!1s0x3976c68ff0a2df73:0xebff42167ed98c34!2m2!1d78.1694957!2d26.2313245!3e3?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                   <button class="btn btn-success">Directions</button>
+               </a>
+               
+               </div></div></div>
+              
+              
+
+               <div class="container col-12  b">
+                <div class="row">
+               <div class=" col-12 col-lg-3">
+                   <h4 class="Title">Agra Fort</h4>
+                 <p class="col-12 AgraFort" height="300"   ></p>
+               </div>
+               <div class="col-12 col-lg-3 info">
+                 <h4 class="card-title Til">Agra Fort</h4>
+                 <p class="card-text ">Agra Fort is a UNESCO World Heritage site located in Agra, India. Built by the Mughal Emperor Akbar in 1565, it served as the main residence of the Mughal rulers until 1638. The fort is a massive red sandstone structure spread over 94 acres and consists of several impressive buildings, including the Jahangir Palace, Khas Mahal, and the Diwan-i-Khas. Its architecture blends Islamic and Hindu styles, showcasing the grandeur of the Mughal Empire. Agra Fort played a crucial role in India’s history and offers stunning views of the nearby Taj Mahal.</p>
+               </div>
+     
+               <div class="col-12 col-lg-3 Thi">
+                   <h4 class=" Ti">Things to do:</h4>
+                   <p class="Thi">
+     
+                       <p><p>1.Explore Jahangir Mahal, the only zenana palace used by Akbar’s wives</p>
+                       <p>2.Appreciate the architecture at Musamman Burj, the royal residence of the queens</p>
+                       <p>3.Take a look at Diwani-I-Aam and Diwani-I-Khas</p>
+                        <p>Visit :November to March</p></p>
+                       
+                       <p>Address : Rakabganj, Agra, Uttar Pradesh - 282003</p>
+                       
+                       <p> Timings :  6:00 AM – 6:00 PM</p>
+                       
+                     <p>  Entry Fee : INR 40 (Indian Nationals), INR 550 (Foreign Nationals)</p>
+                       
+                      <p> Also Read : Top 20 Tourist Places to visit in Agra</p></p>
+                 </div>
+     
+               <div class="col-6 col-lg-3  ">
+                   
+                 <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/rk1_T7bWw7U?si=8iFckz6puYzUPsCW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <a href="https://www.google.com/maps/dir//Agra+Fort,+Rakabganj,+Agra,+Uttar+Pradesh+282003/@27.1795328,78.0123573,16z/data=!4m18!1m8!3m7!1s0x397470d491343beb:0x640a5ccc94029576!2sAgra+Fort!8m2!3d27.1795328!4d78.021112!15sCglBZ3JhIEZvcnRaCyIJYWdyYSBmb3J0kgEIZm9ydHJlc3PgAQA!16zL20vMDQ3OThj!4m8!1m0!1m5!1m1!1s0x397470d491343beb:0x640a5ccc94029576!2m2!1d78.021112!2d27.1795328!3e3?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                   <button class="btn btn-success">Directions</button>
+               </a>
+               
+               </div></div></div>
+              
+               <div class="container col-12  b">
+                <div class="row">
+               <div class=" col-12 col-lg-3">
+                   <h4 class="Title">Jaisalmer Fort</h4>
+                 <p class="col-12 JaisalmerFort" height="300"   ></p>
+               </div>
+               <div class="col-12 col-lg-3 info">
+                 <h4 class="card-title Til">Jaisalmer Fort</h4>
+                 <p class="card-text ">Jaisalmer Fort, also known as Sonar Quila or the "Golden Fort," is a massive sandstone fortress located in Jaisalmer, Rajasthan. Built in 1156 by Rawal Jaisal, it stands majestically in the Thar Desert and is famous for its golden hue that glows under the sun. Unlike most forts, Jaisalmer Fort is a living fort, with residents still occupying its narrow streets, houses, temples, and shops. The fort showcases Rajput architecture with intricately carved havelis, Jain temples, and a royal palace. It's a UNESCO World Heritage site and a symbol of Rajasthan’s rich cultural and historical heritage.</p>
+               </div>
+    
+               <div class="col-12 col-lg-3 Thi">
+                   <h4 class=" Ti">Things to do:</h4>
+                   <p class="Thi">
+    
+                      <p><p>1.Walk along the fort walls</p>
+                        <p>2.Explore the bustling Dussehra Chowk including Maharwal Palace</p>
+                        <p>3.Get an insight into Jaisalmer’s Heritage at the museum</p>
+                        <p>4.Marvel at the sight of Laxminath Temple</p>
+                        <p>5.Visit the seven Jain Temples</p>
+                        <p>6.Walk up to the Cannon Point</p> 
+                        <p>Best Time to Visit :October to March</p></p>
+                       
+                       <p>Address :  Fort Road, Near Gopa Chowk, Amar Sagar Pol, Jaisalmer, Rajasthan - 345001</p>
+                       
+                       <p> Timings :7:00 AM – 6:00 PM</p>
+                       
+                     <p>  Entry Fee :INR 50 (Indian Nationals), INR 250 (Foreign Nationals)</p>
+                       
+                      <p> Also Read :   Topmost Places To Be Visited In Jaisalmer</p></p>
+                 </div>
+    
+               <div class="col-6 col-lg-3  ">
+                   
+                <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/C81pbX7L8kk?si=TUk_fSma91mhqDS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <a href="https://www.google.com/maps/dir//Jaisalmer+Fort,+Khejer+Para,+Manak+Chowk,+Amar+Sagar+Pol,+Jaisalmer,+Rajasthan+345001/@26.9124555,70.9100344,17z/data=!4m17!1m7!3m6!1s0x3947bd22886171ed:0xd4a507c4923e1973!2sJaisalmer+Fort!8m2!3d26.9124555!4d70.9126093!16zL20vMGNrajV6!4m8!1m0!1m5!1m1!1s0x3947bd22886171ed:0xd4a507c4923e1973!2m2!1d70.9126093!2d26.9124555!3e3?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                   <button class="btn btn-success">Directions</button>
+               </a>
+               
+               </div></div></div>
+              
+               <div class="container col-12  b">
+                <div class="row">
+               <div class=" col-12 col-lg-3">
+                   <h4 class="Title">Kangra Fort</h4>
+                 <p class="col-12 KangraFort" height="300"   ></p>
+               </div>
+               <div class="col-12 col-lg-3 info">
+                 <h4 class="card-title Til">Kangra Fort</h4>
+                 <p class="card-text ">Kangra Fort, located in the Kangra Valley of Himachal Pradesh, India, is one of the oldest and largest forts in the country, with origins dating back to the Trigarta Kingdom, mentioned in the Mahabharata. Built by the Katoch dynasty, it sits strategically at the confluence of the Banganga and Majhi rivers. The fort has witnessed numerous invasions over centuries, including by Mahmud of Ghazni in the 11th century and Mughal Emperor Jahangir. Known for its massive stone walls, gates, and temples within its complex, Kangra Fort offers panoramic views of the surrounding valley and has deep historical and cultural significance.</p>
+               </div>
+   
+               <div class="col-12 col-lg-3 Thi">
+                   <h4 class=" Ti">Things to do:</h4>
+                   <p class="Thi">
+   
+                      <p><p>1.Marvel at the ancient buildings</p>
+                        <p>2.Use your photography skills</p>
+                        <p>3.Explore the temples resting within the fort complex</p>
+                        <p>4.Learn the history of Kangra at the museum</p>
+                        <p>5.Soak up the gorgeous views of the surrounding</p>
+                        
+                        <p>Best Time to Visit :March to July</p></p>
+                       
+                       <p>Address :  Old Kangra, Kangra, Himachal Pradesh - 176001</p>
+                       
+                       <p> Timings : 9:00 AM – 6:00 PM</p>
+                       
+                     <p>  Entry Fee : INR 150 (Indian Nationals), INR 300 (Foreign Nationals)</p>
+                       
+                      <p> Also Read :   Top 15 Offbeat Places to Visit in Himachal Pradesh</p></p>
+                 </div>
+   
+               <div class="col-6 col-lg-3  ">
+                   
+                   <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/h08bGDi8w7o?si=KXBeV7HOLqxdxwdn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <a href="https://www.google.com/maps/dir//Kangra+Fort,+Old+Kangra,+Kangra,+Himachal+Pradesh+176001/@32.0875196,76.2516149,17z/data=!4m17!1m7!3m6!1s0x391b4590bd14dd71:0xe9db7498648fff42!2sKangra+Fort!8m2!3d32.0875196!4d76.2541898!16zL20vMGN0eDRk!4m8!1m0!1m5!1m1!1s0x391b4590bd14dd71:0xe9db7498648fff42!2m2!1d76.2541898!2d32.0875196!3e3?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                   <button class="btn btn-success">Directions</button>
+               </a>
+               
+               </div></div></div>
+
+
+
+               <div class="container col-12  b">
+                <div class="row">
+               <div class=" col-12 col-lg-3">
+                   <h4 class="Title">Chittor Fort</h4>
+                 <p class="col-12 ChittorFort" height="300"   ></p>
+               </div>
+               <div class="col-12 col-lg-3 info">
+                 <h4 class="card-title Til">Chittor Fort</h4>
+                 <p class="card-text ">Chittor Fort, located in Chittorgarh, Rajasthan, is one of the largest and most historically significant forts in India. It served as the capital of the Mewar kingdom and was built in the 7th century by the Maurya dynasty. The fort is known for its massive hilltop structure, covering around 700 acres, and houses several palaces, temples, towers, and reservoirs. Chittor Fort is famous for its three legendary sieges, including the acts of jauhar (self-immolation) by its women to avoid capture. Notable landmarks include the Tower of Victory (Vijay Stambh) and the Tower of Fame (Kirti Stambh). The fort is a UNESCO World Heritage Site and symbolizes Rajput valor and sacrifice.</p>
+               </div>
+   
+               <div class="col-12 col-lg-3 Thi">
+                   <h4 class=" Ti">Things to do:</h4>
+                   <p class="Thi">
+   
+                      <p><p>1.Watch the evening Light and Sound show</p>
+                        <p>2.Marvel at the Jain Temples and Meera Temples</p>
+                        <p>3.Explore the countless reservoirs</p>
+                        <p>4.Admire the grandeur of Padmini Palace, Vijay Stambh and  Kirti Stambh</p>
+                        
+                        
+                        <p>Best Time to Visit :October to February</p></p>
+                       
+                       <p>Address :  Chittor Fort Road, Chittorgarh, Rajasthan - 312001</p>
+                       
+                       <p> Timings : 9:45 AM – 6:30 PM</p>
+                       
+                     <p>  Entry Fee : INR 50</p>
+                       
+                      <p> Also Read :   Top Tourist Attractions in Chittorgarh</p></p>
+                 </div>
+   
+               <div class="col-6 col-lg-3  ">
+                <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/RAtEwdCUY2A?si=5SAdLoffDKqqvJUB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <a href="https://www.google.com/maps/dir//Chittorgarh+Fort,+Chittorgarh,+Rajasthan+312001/@24.8839686,74.6447799,17z/data=!4m17!1m7!3m6!1s0x3968a0f41033ea0d:0x4ef923088d726382!2sChittorgarh+Fort!8m2!3d24.8839686!4d74.6473548!16zL20vMGNnajd3!4m8!1m0!1m5!1m1!1s0x3968a0f41033ea0d:0x4ef923088d726382!2m2!1d74.6473548!2d24.8839686!3e3?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                   <button class="btn btn-success">Directions</button>
+               </a>
+               
+        </div></div></div>
+
+
+
+
+
+        <div class="container col-12  b">
+          <div class="row">
+         <div class=" col-12 col-lg-3">
+             <h4 class="Title">Panhala Fort</h4>
+           <p class="col-12 PanhalaFort" height="300"   ></p>
+         </div>
+         <div class="col-12 col-lg-3 info">
+           <h4 class="card-title Til">Panhala Fort</h4>
+           <p class="card-text ">Panhala Fort, located near Kolhapur in Maharashtra, is one of the largest forts in the Deccan region. Built in the 12th century by the Shilahara dynasty, it later became an important stronghold for the Marathas. The fort is closely linked with the Maratha king Chhatrapati Shivaji Maharaj, who used it strategically during his battles against the Mughals. Panhala Fort features massive fortifications, secret passageways, and important structures like the Sajja Kothi and Ambarkhana granaries. The fort's elevated location offers panoramic views of the Sahyadri mountain range, and it played a significant role in Maratha history.</p>
+         </div>
+
+         <div class="col-12 col-lg-3 Thi">
+             <h4 class=" Ti">Things to do:</h4>
+             <p class="Thi">
+
+                <p><p>1.Watch the evening Light and Sound show</p>
+                  <p>2.Marvel at the Jain Temples and Meera Temples</p>
+                  <p>3.Explore the countless reservoirs</p>
+                  <p>4.Admire the grandeur of Padmini Palace, Vijay Stambh and  Kirti Stambh</p>
+                  
+                  
+                  <p>Best Time to Visit :October to February</p></p>
+                 
+                 <p>Address :  Chittor Fort Road, Chittorgarh, Rajasthan - 312001</p>
+                 
+                 <p> Timings : 9:45 AM – 6:30 PM</p>
+                 
+               <p>  Entry Fee : INR 50</p>
+                 
+                <p> Also Read :   Top Tourist Attractions in Chittorgarh</p></p>
+           </div>
+
+         <div class="col-6 col-lg-3  ">
+             
+          <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/hhdei7sU5xk?si=jjGT9_Dv5dTNE9hm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         <a href="https://www.google.com/maps/dir//Panhala+Fort,+Panhala,+Maharashtra+416201/@16.810015,74.1017357,16z/data=!4m18!1m8!3m7!1s0x3bc1af2403b02a2d:0x261688a64b188fc1!2sPanhala+Fort,+Panhala,+Maharashtra+416201!3b1!8m2!3d16.8113091!4d74.1078459!16s%2Fg%2F11_v4p72j!4m8!1m0!1m5!1m1!1s0x3bc1af2403b02a2d:0x261688a64b188fc1!2m2!1d74.1078459!2d16.8113091!3e3?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+             <button class="btn btn-success">Directions</button>
+         </a>
+         
+       </div></div></div>
+
+
+
+
+
+       
+
+<div class="container col-12  b">
+  <div class="row">
+ <div class=" col-12 col-lg-3">
+     <h4 class="Title">Junagarh Fort</h4>
+   <p class="col-12 JunagarhFort" height="300"   ></p>
+ </div>
+ <div class="col-12 col-lg-3 info">
+   <h4 class="card-title Til">Junagarh Fort</h4>
+   <p class="card-text ">Junagarh Fort, located in Bikaner, Rajasthan, is an impressive fort known for never being conquered. Built in 1594 by Raja Rai Singh, a general in the Mughal army, the fort showcases a blend of Mughal, Rajput, and Gujarati architecture. It features massive walls, grand courtyards, and ornate palaces such as Anup Mahal and Phool Mahal, adorned with intricate carvings and frescoes. The fort also houses temples and a museum displaying royal artifacts. Unlike many forts in Rajasthan, Junagarh is situated on a plain rather than a hill, highlighting its strong defensive design.</p>
+ </div>
+
+ <div class="col-12 col-lg-3 Thi">
+     <h4 class=" Ti">Things to do:</h4>
+     <p class="Thi">
+
+        <p><p>1.Admire the stunning architecture at Junagarh Fort</p>
+          <p>2.Enjoy the camel safari at the Thar Desert</p>
+          <p>3.Go for shopping at the Kote Gate</p>
+          
+          
+          
+          <p>Best Time to Visit :November to February</p></p>
+         
+         <p>Address : Junagarh Fort Road, Bikaner, Rajasthan – 334001</p>
+         
+         <p> Timings : 10:00 AM – 4:30 PM</p>
+         
+       <p>  Entry Fee : INR 50 (Indian Nationals), INR 300 (Foreign Nationals)</p>
+         
+        <p> Also Read :   Top Tourist Attractions in Bikaner</p></p>
+   </div>
+
+ <div class="col-6 col-lg-3  ">
+     
+  <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/BqoHsq-ykiE?si=YSJdiBKLVlf_P7X7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ <a href="https://www.google.com/maps/dir//28C9%2BQ5Q+Junagarh+Fort,+Bikaner+Fort,+Bikaner,+Rajasthan+334001/@28.0223816,73.3128169,17z/data=!4m12!1m2!2m1!1sJunagarh+Fort!4m8!1m0!1m5!1m1!1s0x393fdd798ad1841f:0x9356163efda8b9d6!2m2!1d73.3179962!2d28.0219586!3e3?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+     <button class="btn btn-success">Directions</button>
+ </a>
+ 
+</div></div>
+
+
+</div>
+
+
+
+              
+
+    
+    
+      
+        
+       
+    
+</div></div></div>
+      
+
+
+
+<script>
+  let searchInputEl = document.getElementById("searchInput");
+  let searchResultsEl = document.getElementById("searchResults");
+  let spinnerEl = document.getElementById("spinner");
+
+  function createAndAppendSearchResult(result) {
+    let { link, title, description } = result;
+
+    let resultItemEl = document.createElement("div");
+    resultItemEl.classList.add("result-item");
+    searchResultsEl.appendChild(resultItemEl);
+
+    // Create Title Element
+    let titleEl = document.createElement("a");
+    titleEl.classList.add("result-title");
+    titleEl.textContent = title;
+    titleEl.href = link;
+    titleEl.target = "_blank";
+    resultItemEl.appendChild(titleEl);
+
+    // Create Break Element
+    let breakEl = document.createElement("br");
+    resultItemEl.appendChild(breakEl);
+
+    // Create URL Element
+    let urlEl = document.createElement("a");
+    urlEl.classList.add("result-url");
+    urlEl.target = "_blank";
+    urlEl.textContent = link;
+    resultItemEl.appendChild(urlEl);
+
+    // Create Another Break Element
+    let lineEl = document.createElement("br");
+    resultItemEl.appendChild(lineEl);
+
+    // Create Description Element
+    let descriptionEl = document.createElement("p");
+    descriptionEl.classList.add("link-description");
+    descriptionEl.textContent = description;
+    resultItemEl.appendChild(descriptionEl);
+  }
+
+  function displayResults(searchResults) {
+    spinnerEl.classList.add("d-none");
+    searchResultsEl.innerHTML = "";
+    for (let result of searchResults) {
+      createAndAppendSearchResult(result);
+    }
+  }
+
+  function searchInput(event) {
+    if (event.key === "Enter") {
+      searchResultsEl.innerHTML = "";    
+      spinnerEl.classList.remove("d-none");
+      let searchInput = searchInputEl.value;
+      let url = "https://apis.ccbp.in/wiki-search?search=" + searchInput;
+      let options = { method: "GET" };
+
+      fetch(url, options)
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(jsonData) {
+          let { search_results } = jsonData;
+          displayResults(search_results);
+        });
+    }
+  }
+
+  searchInputEl.addEventListener("keydown", searchInput);
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

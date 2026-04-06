@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      .main-container {
+            font-family: "Roboto";
+        }
+
+       
+
+        .wiki-logo {
+            margin-bottom: 30px;
+            width: 150px;
+            border: opx;
+            border-radius: 10px;
+        }
+
+        .search-input {
+            margin-top: 10px;
+            border: opx;
+            border-radius: 10px;
+            padding: 10px;
+            
+            font-size: 18px;
+            height: 40px;
+        }
+
+        .search-results {
+            width: 100%;
+            padding-left: 20px;
+            color: white;
+        }
+
+        /* Search Result Item */
+.result-item {
+    margin-bottom: 20px;
+    color: white; /* Ensures that the text is white */
+}
+
+/* Search Result Title */
+.result-title {
+    font-size: 22px;
+    color:orange; /* Title in white */
+    text-decoration: none;
+}
+
+/* Search Result URL */
+.result-url {
+    color: #00FF00; /* If you want the link to remain green or use white: change to 'white' */
+    text-decoration: none;
+}
+
+/* Search Result Description */
+.link-description {
+    font-size: 15px;
+    color: white; /* Description in white */
+}
+.wiki{
+   
+    background-color: rgba(0, 0, 0, 0.5);
+        
+        
+        border: 0px;
+        border-radius: 20px;
+}
+        .b{
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 0px;
+        border-radius: 20px;
+
+      
+      }
+      .back {
+    background-image: url('beachesimages/Beach.avif');
+    background-size: cover; /* Maintains original image size */
+    background-attachment: fixed;
+    background-repeat: repeat; /* Repeats the image horizontally and vertically */
+    background-position: top left; /* Starts repeating from the top-left corner */
+}
+.info{
+        color:white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 2px solid rgb(8, 8, 56);
+        text-align: center;
+        border-radius: 20px;
+      }
+      .info:hover{
+        color:white;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 2px solid rgb(8, 8, 56);
+        text-align: center;
+        border-radius: 20px;
+      }
+      
+      .video{
+        border: 2px solid rgb(40, 9, 4);
+        text-align: center;
+        border-radius: 20px;
+      }
+      .nav{
+        background-color: rgb(10, 9, 9);
+        color: aliceblue;
+      }
+      .li{
+        background-color: rgb(120, 115, 115);
+        color: black;
+        border: 0px;
+        border-radius: 5px;
+        margin: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 40px;
+        text-align: center;
+      }
+      .li:hover{
+        
+        background-color: rgb(80, 77, 73);
+        color: rgb(253, 251, 251);
+        border: 0px;
+        border-radius: 5px;
+        margin: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 40px;
+        text-align: center;
+      
+      }
+      .lit{
+        background-image: url('fortsimages/ICON.jpg');
+        border: 0px;
+        border-radius: 5px;
+      
+        
+        
+        text-align: center;
+      }
+      .GoaBeache{
+        background-image: url('beachesimages/Diu.avif');
+        border: 0px; /* Corrected the typo from 'opx' to 'none' */
+        border-radius: 10px;
+        background-size: cover; /* Ensures the full image fits within the element */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        width: 100%; 
+        height:300px;
+       }
+       .DighaBeache{
+        background-image: url('beachesimages/Digha.avif');
+        border: 0px; /* Corrected the typo from 'opx' to 'none' */
+        border-radius: 10px;
+        background-size: cover; /* Ensures the full image fits within the element */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        width: 100%; 
+        height:300px;
+       }
+       .LakshadweepBeache{
+        background-image: url('beachesimages/lakshadweep.avif');
+        border: 0px; /* Corrected the typo from 'opx' to 'none' */
+        border-radius: 10px;
+        background-size: cover; /* Ensures the full image fits within the element */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        width: 100%; 
+        height:300px;
+       }
+       .PandiCherryBeache{
+        background-image: url('beachesimages/pondicherry.avif');
+        border: 0px; /* Corrected the typo from 'opx' to 'none' */
+        border-radius: 10px;
+        background-size: cover; /* Ensures the full image fits within the element */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        width: 100%; 
+        height:300px;
+       }
+       .AlibaugBeache{
+        background-image: url('beachesimages/Alibaug.avif');
+        border: 0px; /* Corrected the typo from 'opx' to 'none' */
+        border-radius: 10px;
+        background-size: cover; /* Ensures the full image fits within the element */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        width: 100%; 
+        height:300px;
+       }
+       .TarkarliBeache{
+        background-image: url('beachesimages/tarkarli.avif');
+        border: 0px; /* Corrected the typo from 'opx' to 'none' */
+        border-radius: 10px;
+        background-size: cover; /* Ensures the full image fits within the element */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        width: 100%; 
+        height:300px;
+       }
+       .KovalamBeache{
+        background-image: url('beachesimages/Kovalam.avif');
+        border: 0px; /* Corrected the typo from 'opx' to 'none' */
+        border-radius: 10px;
+        background-size: cover; /* Ensures the full image fits within the element */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        width: 100%; 
+        height:300px;
+       }
+       .GokarnaBeache{
+        background-image: url('beachesimages/Gokarna.avif');
+        border: 0px; /* Corrected the typo from 'opx' to 'none' */
+        border-radius: 10px;
+        background-size: cover; /* Ensures the full image fits within the element */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        width: 100%; 
+        height:300px;
+       }
+       .VarkalaBeache{
+        background-image: url('beachesimages/Varakalas.webp');
+        border: 0px; /* Corrected the typo from 'opx' to 'none' */
+        border-radius: 10px;
+        background-size: cover; /* Ensures the full image fits within the element */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        width: 100%; 
+        height:300px;
+       }
+       .DiuBeache{
+        background-image: url('beachesimages/Diu.avif');
+        border: 0px; /* Corrected the typo from 'opx' to 'none' */
+        border-radius: 10px;
+        background-size: cover; /* Ensures the full image fits within the element */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        width: 100%; 
+        height:300px;
+       }
+      .Title{
+        color: white;
+        font-size: medium;
+        font-weight: 20px;
+        background-color: rgb(241, 98, 8);
+        border: 0px;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+      }
+      .Ti{
+        color:white;
+        text-align: center;
+      }
+      .Til{
+        color:white;
+        text-align: center;
+      }
+      .Thi{
+        color: white;
+        background-color: rgb(46, 48, 49);
+        border: 0px;
+        border-radius: 20px;
+      }
+      .Thi:hover{
+        color: white;
+        background-color: rgb(30, 32, 34);
+        border: 0px;
+        border-radius: 20px;
+      }
+      .fixed-top {
+        background-color: black;
+         position: fixed;
+         top: 0;
+         right: 0;
+         left: 0;
+         z-index: 1030; /* Keeps the navbar above other content */
+        }
+      body{
+        padding-top: 70px;
+      }
+      .bt{
+        color: white;
+        background-color: rgba(251, 50, 10);
+        border: 0px;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 10px;
+      }
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="col-12">
+        <div class="container col-12">
+            <div class="row">
+              <div class="col-12 nav">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                  <button class="lit" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                      <a class="navbar-brand" href="#">
+                        <img src="fortsimages/ICON.jpg" height="50PX" width="50PX">
+                      </a>
+                    </span>
+                  </button>
+                  <div class="collapse navbar-collapse navbar-item-alignment" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link li" href="index.html">Home<span class="sr-only">(current)</span></a>
+                      <a class="nav-link li" href="Temple.html">Temples</a>
+                      <a class="nav-link li" href="Forts.html">Forts</a>
+                      <a class="nav-link li" href="beaches.html">Beaches</a>
+                      <a class="nav-link li" href="follow.html">Follow Us</a>
+                      <!-- Search Input -->
+                    <div class="wiki-search-header text-center ml-auto">
+                      <input placeholder="Search Place Here" type="search" class="search-input w-100" id="searchInput" />
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+                </nav></div></div></div></div>
+              </div>
+            <div class="col-12 back">
+
+              <div class="container col-12  wiki" id="tirupati">
+                <div class="d-none" id="spinner">
+                    <div class="d-flex justify-content-center">
+                      <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="search-results" id="searchResults"></div>
+                </div>
+
+
+
+
+
+
+
+                <div class="container col-12  b">
+                   <div class="row">
+
+                  <div class=" col-12 col-lg-3">
+                      <h1 class="Title">Goa Beach</h1>
+                    <p class="col-12 GoaBeache" height="250"   ></p>
+
+                    
+
+                  </div>
+
+                  
+                  <div class="col-12 col-lg-6 info">
+                    <button class="bt">Goa Beach</button>
+                    <p class="card-text "><p>Goa's beaches offer a unique blend of vibrancy and tranquility, making it a popular destination for all kinds of travelers. The northern beaches, such as Baga, Calangute, and Anjuna, are famous for their lively atmosphere, beach shacks, water sports, and vibrant nightlife. Baga and Calangute are bustling with tourists and offer plenty of activities, from parasailing to jet skiing, while Anjuna stands out for its bohemian culture, hosting weekly flea markets and renowned full-moon parties. Vagator, with its striking red cliffs and proximity to Chapora Fort, provides a slightly more relaxed vibe.</p>
+                    <p>In contrast, the beaches of South Goa, such as Palolem, Agonda, and Colva, are ideal for those seeking peace and quiet. Palolem, with its crescent shape and palm-lined shores, is perfect for swimming and kayaking, while Agonda offers a serene escape and is a nesting site for Olive Ridley turtles. Colva, known for its long stretch of white sand, provides a quiet ambiance for leisurely walks and sunsets. Goa also caters to adventure enthusiasts with water sports available on most beaches, and its nightlife is world-famous, particularly in spots like Tito’s Lane in Baga. Whether you're looking for adventure, relaxation, or a cultural experience, Goa's beaches have something for everyone.</p>
+                  
+                  </p>
+                  </div>
+                  <div class="col-12 col-lg-3 ">
+                    <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/mpORcigK0ME?si=JNmkVgsvEKwI8qVh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <a href="https://www.google.com/maps/place/Shri+Kedarnath+Jyotirlinga+Temple/@31.5149966,75.2008162,6.6z/data=!4m6!3m5!1s0x39083ee08aa6b0b5:0xdbbdae8b9602ee02!8m2!3d30.7346267!4d79.0668943!16s%2Fm%2F026jlcg?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+
+                      <button class="btn btn-success">Directions</button>
+                   </a>
+                  </div></div>
+      
+                  
+      
+                  </div>
+                
+                  <div class="container col-12  b">
+                    <div class="row">
+ 
+                   <div class=" col-12 col-lg-3">
+                       <h1 class="Title">Digha Beach</h1>
+                     <p class="col-12 DighaBeache" height="250"   ></p>
+ 
+                     
+ 
+                   </div>
+ 
+                   
+                   <div class="col-12 col-lg-6 info">
+                     <button class="bt">Digha Beach</button>
+                     <p class="card-text "><p>Digha Beach, located in the Purba Medinipur district of West Bengal, is one of the most popular beach destinations in Eastern India. Known for its flat, shallow sand shores that stretch for miles along the Bay of Bengal, Digha is a favorite weekend getaway for locals from Kolkata and nearby regions. The beach offers calm waters, making it a safe spot for swimming and other beach activities.</p>
+                    <p>Digha is divided into two main sections: Old Digha and New Digha. Old Digha has a rustic charm with an older seaside town vibe, featuring rocky shores and is often favored by those who enjoy quieter surroundings. New Digha, just a few kilometers away, is more developed and modern, with wider sandy stretches, better amenities, and more tourist facilities. The beach in New Digha is relatively cleaner and more organized, making it ideal for families.</p>
+                    <p>Apart from the beach, Digha offers other attractions like the Marine Aquarium and Research Centre, one of the largest in India, featuring an array of marine species. Another popular spot is Amarabati Park, perfect for a leisurely stroll or a paddleboat ride. For those interested in local culture, Digha also has nearby temples and villages that reflect the region's heritage. Digha’s accessibility, scenic beauty, and affordable accommodations make it a convenient and attractive destination for beach lovers and tourists.</p>
+                    </p>
+                   </div>
+                   <div class="col-12 col-lg-3 ">
+                    <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/Cxjg-q2qufg?si=k0Uy73QDHlUb1R7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     
+                     <a href="https://www.google.com/maps/place/Shri+Kedarnath+Jyotirlinga+Temple/@31.5149966,75.2008162,6.6z/data=!4m6!3m5!1s0x39083ee08aa6b0b5:0xdbbdae8b9602ee02!8m2!3d30.7346267!4d79.0668943!16s%2Fm%2F026jlcg?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+
+                      <button class="btn btn-success">Directions</button>
+                   </a>
+                   </div>
+       
+                   
+       
+                   </div>
+                </div>
+              
+                <div class="container col-12  b">
+                  <div class="row">
+
+                 <div class=" col-12 col-lg-3">
+                     <h1 class="Title">Lakshadweep Beach</h1>
+                   <p class="col-12 LakshadweepBeache" height="250"   ></p>
+                 </div>
+                 <div class="col-12 col-lg-6 info">
+                   <button class="bt">Lakshadweep Beach</button>
+                   <p class="card-text "><p>Lakshadweep, an exquisite archipelago in the Arabian Sea, is home to some of India’s most pristine and untouched beaches. The islands of Agatti, Bangaram, and Kadmat are particularly known for their white sandy beaches, clear turquoise waters, and vibrant coral reefs. The natural beauty of these islands offers a serene and tranquil atmosphere, far removed from the busy, tourist-heavy beaches found elsewhere. Lakshadweep is ideal for those seeking solitude and relaxation, with its secluded beaches providing a perfect escape into nature. The minimal commercialization ensures that the islands retain their unspoiled charm.</p>
+                  <p>Lakshadweep is also a haven for adventure enthusiasts. The islands are famous for their water sports, especially snorkeling and scuba diving, thanks to the rich marine life and colorful coral reefs that surround them. Agatti Island, with its shallow lagoons, is perfect for exploring the underwater world, while Bangaram Island offers opportunities for diving in deeper waters. Kayaking, sailing, and fishing are also popular activities. The unblemished beauty and calm environment of Lakshadweep’s beaches, combined with thrilling water sports, make it an ideal destination for both relaxation and adventure.</p>
+                 </div>
+                 <div class="col-12 col-lg-3 ">
+                   <iframe width="100%" height="300" class="video " src="https://www.youtube.com/embed/Hw1PHpyM4aw?si=92U5qp-jFVv69C3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                   
+                   <a href="https://www.google.com/maps/place/Shri+Kedarnath+Jyotirlinga+Temple/@31.5149966,75.2008162,6.6z/data=!4m6!3m5!1s0x39083ee08aa6b0b5:0xdbbdae8b9602ee02!8m2!3d30.7346267!4d79.0668943!16s%2Fm%2F026jlcg?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+
+                    <button class="btn btn-success">Directions</button>
+                 </a>
+                 </div>
+     
+                 
+     
+                 </div></div>
+              
+              
+              <div class="container col-12  b">
+                  <div class="row">
+
+                 <div class=" col-12 col-lg-3">
+                     <h1 class="Title">PandiCherry Beach</h1>
+                   <p class="col-12 PandiCherryBeache" height="250"   ></p>
+                 </div>
+                 <div class="col-12 col-lg-6 info">
+                  <button class="bt">PandiCherry Beach</button>
+                  <p class="card-text "><p>Puducherry (formerly Pondicherry), located on India’s southeastern coast along the Bay of Bengal, is known for its beautiful beaches that blend French colonial charm with Indian coastal vibes. The beaches in Puducherry are serene and less crowded compared to other beach destinations, offering a peaceful escape for travelers. Promenade Beach, also called Rock Beach, is one of the most famous beaches in Puducherry, with a long rocky shoreline and a picturesque promenade perfect for leisurely walks. This beach is located near the heart of the city and is lined with iconic landmarks like the French War Memorial and the Gandhi statue, adding to its historic and cultural allure.</p><p>Other notable beaches include Paradise Beach and Auroville Beach. Paradise Beach, accessible via a boat ride, is a pristine, golden sand beach surrounded by palm trees, ideal for swimming and relaxation. Auroville Beach, near the Auroville township, is popular with surfers and those looking for a quiet, less commercialized beach experience. Puducherry’s beaches, with their calm waters, scenic beauty, and tranquil atmosphere, offer a perfect blend of relaxation and cultural exploration, making it a charming coastal getaway.</p></p>
+                </div>
+                <div class="col-12 col-lg-3 ">
+                  <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/HPY8OJDZDqc?si=EZZIJerKAy3665XV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 
+                  <a href="https://www.google.com/maps/place/Shri+Kedarnath+Jyotirlinga+Temple/@31.5149966,75.2008162,6.6z/data=!4m6!3m5!1s0x39083ee08aa6b0b5:0xdbbdae8b9602ee02!8m2!3d30.7346267!4d79.0668943!16s%2Fm%2F026jlcg?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+
+                    <button class="btn btn-success">Directions</button>
+                 </a>
+                </div>
+              </div></div>
+
+                 
+                 
+              <div class="container col-12  b">
+                <div class="row">
+
+               <div class=" col-12 col-lg-3">
+                   <h1 class="Title">Alibaug Beach</h1>
+                 <p class="col-12 AlibaugBeache" height="250"   ></p>
+               </div>
+               <div class="col-12 col-lg-6 info">
+                <button class="bt">Alibaug Beach</button>
+                <p class="card-text "><p>Alibaug is a popular coastal retreat located about 100 km from Mumbai, renowned for its tranquil beaches, historical forts, and scenic landscapes. The town offers a blend of nature and history, making it an attractive destination for both relaxation and exploration. Visitors often flock to Alibaug Beach, which is known for its calm waters and picturesque sunset views, while the nearby Kolaba Fort adds a sense of historical intrigue. The fort, accessible during low tide, is a significant landmark reflecting Maratha architecture and the town's rich heritage.</p><p>Apart from beaches, Alibaug boasts several attractions like Kihim Beach, Nagaon Beach, and Mandwa, known for its ferry terminal connecting Mumbai. The region also has charming homestays and resorts, offering a peaceful escape from city life. Alibaug’s proximity to other destinations, such as Kashid Beach and Murud-Janjira Fort, makes it an ideal base for further exploration of the Konkan coast. Its combination of natural beauty, heritage sites, and modern accommodations makes Alibaug a favored getaway for travelers.</p></p>
+              </div>
+              <div class="col-12 col-lg-3 ">
+                <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/O2WgN4_S0G8?si=q97uIDQx0MCX9rM9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+                <a href="https://www.google.com/maps/place/Shri+Kedarnath+Jyotirlinga+Temple/@31.5149966,75.2008162,6.6z/data=!4m6!3m5!1s0x39083ee08aa6b0b5:0xdbbdae8b9602ee02!8m2!3d30.7346267!4d79.0668943!16s%2Fm%2F026jlcg?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+
+                  <button class="btn btn-success">Directions</button>
+               </a>
+              </div>
+            </div></div>
+
+
+            <div class="container col-12  b">
+              <div class="row">
+
+             <div class=" col-12 col-lg-3">
+                 <h1 class="Title">Tarkarli Beach</h1>
+               <p class="col-12 TarkarliBeache" height="250"   ></p>
+             </div>
+             <div class="col-12 col-lg-6 info">
+              <button class="bt">Tarkarli Beach</button>
+              <p class="card-text "><p>Tarkarli, nestled in Maharashtra’s Sindhudurg district, is a serene coastal village known for its clear turquoise waters and picturesque beaches. The village is a popular destination for water sports enthusiasts, offering activities such as scuba diving, snorkeling, jet skiing, and parasailing. Tarkarli Beach is especially famous for its crystal-clear waters, where the seabed is visible up to 20 feet deep, making it one of the best diving spots in India. Its untouched beauty and calm surroundings make it an ideal spot for those looking to escape the hustle of city life.</p><p>In addition to its beach activities, Tarkarli boasts rich historical significance with attractions like Sindhudurg Fort, a sea fort built by Chhatrapati Shivaji Maharaj. The village is also home to tranquil backwaters along the Karli River, where visitors can enjoy houseboat stays and mangrove tours. Dolphin-watching tours and the region's delicious Malvani cuisine, known for its seafood and coconut-based dishes, further enhance the Tarkarli experience. This unique combination of adventure, history, and culture makes Tarkarli a must-visit destination on the Konkan coast.</p></p>
+            </div>
+            <div class="col-12 col-lg-3 ">
+              <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/fKGzAVANp-o?si=DvOelpny_iI-U_kl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             
+              <a href="https://www.google.com/maps/place/Shri+Kedarnath+Jyotirlinga+Temple/@31.5149966,75.2008162,6.6z/data=!4m6!3m5!1s0x39083ee08aa6b0b5:0xdbbdae8b9602ee02!8m2!3d30.7346267!4d79.0668943!16s%2Fm%2F026jlcg?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+
+                <button class="btn btn-success">Directions</button>
+             </a>
+            </div>
+          </div></div>
+     
+          <div class="container col-12  b">
+            <div class="row">
+
+           <div class=" col-12 col-lg-3">
+               <h1 class="Title">Kovalam Beach</h1>
+             <p class="col-12 KovalamBeache" height="250"   ></p>
+           </div>
+           <div class="col-12 col-lg-6 info">
+            <button class="bt">Kovalam Beach</button>
+            <p class="card-text "><p>Kovalam is a popular beach destination located in the southern state of Kerala, India, known for its crescent-shaped beaches, palm-lined shores, and calm waters. Situated about 16 kilometers from Thiruvananthapuram (Trivandrum), Kovalam attracts both domestic and international tourists for its serene beauty and laid-back ambiance. The town is famous for its three adjacent beaches: Lighthouse Beach, Hawah Beach, and Samudra Beach, each offering a unique experience. Lighthouse Beach, with its iconic lighthouse, is the most popular and a perfect spot for sunbathing, swimming, and water sports.</p><p>Kovalam is also known for its thriving wellness tourism, particularly Ayurveda treatments, yoga retreats, and meditation centers. The town has several resorts and wellness centers that offer rejuvenating Ayurvedic massages, making it a perfect destination for travelers seeking relaxation and healing. The tranquil backwaters, cultural heritage, and the mouthwatering Kerala cuisine—especially seafood—add to the charm of Kovalam. Its combination of natural beauty, wellness, and cultural richness makes it one of the most sought-after destinations in Kerala.</p></p>
+          </div>
+          <div class="col-12 col-lg-3 ">
+            <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/nxqSpiGglkU?si=0fslw8LrptnkcKVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+            <a href="https://www.google.com/maps/place/Shri+Kedarnath+Jyotirlinga+Temple/@31.5149966,75.2008162,6.6z/data=!4m6!3m5!1s0x39083ee08aa6b0b5:0xdbbdae8b9602ee02!8m2!3d30.7346267!4d79.0668943!16s%2Fm%2F026jlcg?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+
+              <button class="btn btn-success">Directions</button>
+           </a>
+          </div>
+        </div></div>
+
+        <div class="container col-12  b">
+          <div class="row">
+
+         <div class=" col-12 col-lg-3">
+             <h1 class="Title">Gokarna Beach</h1>
+           <p class="col-12 GokarnaBeache" height="250"   ></p>
+         </div>
+         <div class="col-12 col-lg-6 info">
+          <button class="bt">Gokarna Beach</button>
+          <p class="card-text "><p>Gokarna, located in the Uttara Kannada district of Karnataka, is a charming coastal town known for its pristine beaches, laid-back atmosphere, and religious significance. It is a popular destination for both pilgrims and beach lovers, offering a mix of spirituality and serene beach vibes. The town is home to the Mahabaleshwar Temple, a sacred site dedicated to Lord Shiva, which attracts devotees from across the country. Gokarna is often compared to Goa for its relaxed, bohemian vibe but remains more peaceful and less commercialized, making it an ideal retreat for travelers looking for tranquility.</p><p>The beaches of Gokarna are its main draw, with Om Beach, shaped like the Om symbol, being the most famous. Other popular beaches include Kudle Beach, Half Moon Beach, and Paradise Beach, each offering picturesque views, calm waters, and the perfect setting for relaxation or yoga. Gokarna is also known for its low-key beach shacks and simple yet charming guesthouses, providing an authentic and budget-friendly coastal experience. Whether you’re seeking spirituality, scenic beauty, or a peaceful escape, Gokarna offers a perfect blend of all three.</p></p>
+        </div>
+        <div class="col-12 col-lg-3 ">
+          <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/jVomAVZcuxM?si=hT_sg20oj4z8n3tV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         
+          <a href="https://www.google.com/maps/place/Shri+Kedarnath+Jyotirlinga+Temple/@31.5149966,75.2008162,6.6z/data=!4m6!3m5!1s0x39083ee08aa6b0b5:0xdbbdae8b9602ee02!8m2!3d30.7346267!4d79.0668943!16s%2Fm%2F026jlcg?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+
+            <button class="btn btn-success">Directions</button>
+         </a>
+        </div>
+      </div></div>
+
+           
+
+      <div class="container col-12  b">
+        <div class="row">
+
+       <div class=" col-12 col-lg-3">
+           <h1 class="Title">Varkala Beach</h1>
+         <p class="col-12 VarkalaBeache" height="250"   ></p>
+       </div>
+       <div class="col-12 col-lg-6 info">
+        <button class="bt">Varkala Beach</button>
+        <p class="card-text "><p>Varkala, located in the southern state of Kerala, is a picturesque coastal town famous for its unique cliffs overlooking the Arabian Sea and its pristine beaches. Varkala Beach, also known as Papanasam Beach, is a major attraction, offering golden sands, calm waters, and stunning views from the cliffside. The beach is considered sacred by locals, with the name "Papanasam" meaning "redemption from sins," and is frequented by both tourists and pilgrims. The cliffside is lined with vibrant cafes, shops, and yoga centers, creating a laid-back and bohemian atmosphere, perfect for travelers looking for relaxation or wellness retreats.</p><p>Apart from the beach, Varkala is also known for the Janardanaswamy Temple, an ancient Hindu temple dedicated to Lord Vishnu, adding to the spiritual vibe of the town. Varkala is a popular spot for Ayurvedic treatments and yoga, with numerous wellness centers offering holistic therapies. The natural beauty, coupled with the serene backwaters nearby, and the vibrant local culture, make Varkala a perfect destination for those seeking peace, wellness, and a connection with nature. Its combination of beach bliss, spirituality, and wellness draws a diverse range of travelers to this Kerala gem.</p></p>
+      </div>
+      <div class="col-12 col-lg-3 ">
+        <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/Jc9m8QZDG0c?si=_3noTxWFaUdi_ssh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       
+        <a href="https://www.google.com/maps/place/Shri+Kedarnath+Jyotirlinga+Temple/@31.5149966,75.2008162,6.6z/data=!4m6!3m5!1s0x39083ee08aa6b0b5:0xdbbdae8b9602ee02!8m2!3d30.7346267!4d79.0668943!16s%2Fm%2F026jlcg?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+
+          <button class="btn btn-success">Directions</button>
+       </a>
+      </div>
+    </div></div>
+
+
+
+
+    <div class="container col-12  b">
+      <div class="row">
+
+     <div class=" col-12 col-lg-3">
+         <h1 class="Title">Diu Beach</h1>
+       <p class="col-12 DiuBeache" height="250"   ></p>
+     </div>
+     <div class="col-12 col-lg-6 info">
+      <button class="bt">Diu Beach</button>
+      <p class="card-text "><p>Diu is a small island town off the coast of Gujarat, India, known for its tranquil beaches, Portuguese colonial architecture, and laid-back charm. Part of the union territory of Daman and Diu, this serene destination is a blend of cultural heritage and natural beauty. Nagoa Beach is one of the most famous beaches in Diu, offering palm-fringed shores and calm waters, perfect for swimming and relaxation. The island’s peaceful atmosphere and relatively uncrowded beaches make it an ideal spot for those seeking a quiet getaway.</p><p>Diu is also rich in history, with its well-preserved Diu Fort, a massive coastal fortress built by the Portuguese in the 16th century. The fort offers stunning views of the Arabian Sea and houses several cannons and ancient structures. Other attractions include St. Paul’s Church, an architectural marvel of the Portuguese Baroque style, and the Naida Caves, a network of natural caves with stunning rock formations. The town also offers a unique blend of Gujarati and Portuguese culture, reflected in its cuisine, festivals, and architecture, making Diu a charming destination for both beach lovers and history enthusiasts.</p></p>
+    </div>
+    <div class="col-12 col-lg-3 ">
+      <iframe width="300" height="300" class="video" src="https://www.youtube.com/embed/XsKcuG87qrk?si=wybgeCiY1NPxES2x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <a href="https://www.google.com/maps/place/Shri+Kedarnath+Jyotirlinga+Temple/@31.5149966,75.2008162,6.6z/data=!4m6!3m5!1s0x39083ee08aa6b0b5:0xdbbdae8b9602ee02!8m2!3d30.7346267!4d79.0668943!16s%2Fm%2F026jlcg?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+
+        <button class="btn btn-success">Directions</button>
+     </a>
+    </div>
+  </div></div>
+
+
+
+
+                 </div>
+
+                 
+                 
+
+
+              
+              
+              </div>
+
+
+      
+
+
+
+              <script>
+                let searchInputEl = document.getElementById("searchInput");
+                let searchResultsEl = document.getElementById("searchResults");
+                let spinnerEl = document.getElementById("spinner");
+            
+                function createAndAppendSearchResult(result) {
+                  let { link, title, description } = result;
+            
+                  let resultItemEl = document.createElement("div");
+                  resultItemEl.classList.add("result-item");
+                  searchResultsEl.appendChild(resultItemEl);
+            
+                  // Create Title Element
+                  let titleEl = document.createElement("a");
+                  titleEl.classList.add("result-title");
+                  titleEl.textContent = title;
+                  titleEl.href = link;
+                  titleEl.target = "_blank";
+                  resultItemEl.appendChild(titleEl);
+            
+                  // Create Break Element
+                  let breakEl = document.createElement("br");
+                  resultItemEl.appendChild(breakEl);
+            
+                  // Create URL Element
+                  let urlEl = document.createElement("a");
+                  urlEl.classList.add("result-url");
+                  urlEl.target = "_blank";
+                  urlEl.textContent = link;
+                  resultItemEl.appendChild(urlEl);
+            
+                  // Create Another Break Element
+                  let lineEl = document.createElement("br");
+                  resultItemEl.appendChild(lineEl);
+            
+                  // Create Description Element
+                  let descriptionEl = document.createElement("p");
+                  descriptionEl.classList.add("link-description");
+                  descriptionEl.textContent = description;
+                  resultItemEl.appendChild(descriptionEl);
+                }
+            
+                function displayResults(searchResults) {
+                  spinnerEl.classList.add("d-none");
+                  searchResultsEl.innerHTML = "";
+                  for (let result of searchResults) {
+                    createAndAppendSearchResult(result);
+                  }
+                }
+            
+                function searchInput(event) {
+                  if (event.key === "Enter") {
+                    searchResultsEl.innerHTML = "";    
+                    spinnerEl.classList.remove("d-none");
+                    let searchInput = searchInputEl.value;
+                    let url = "https://apis.ccbp.in/wiki-search?search=" + searchInput;
+                    let options = { method: "GET" };
+            
+                    fetch(url, options)
+                      .then(function(response) {
+                        return response.json();
+                      })
+                      .then(function(jsonData) {
+                        let { search_results } = jsonData;
+                        displayResults(search_results);
+                      });
+                  }
+                }
+            
+                searchInputEl.addEventListener("keydown", searchInput);
+              </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
